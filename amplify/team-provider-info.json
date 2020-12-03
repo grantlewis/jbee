@@ -1,15 +1,23 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-jbee-dev-115401-authRole",
-      "UnauthRoleArn": "arn:aws:iam::211937696358:role/amplify-jbee-dev-115401-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::211937696358:role/amplify-jbee-dev-115401-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-jbee-dev-115401-deployment",
-      "UnauthRoleName": "amplify-jbee-dev-115401-unauthRole",
-      "StackName": "amplify-jbee-dev-115401",
-      "StackId": "arn:aws:cloudformation:us-east-1:211937696358:stack/amplify-jbee-dev-115401/26973440-3588-11eb-a569-0e2e9aec3a21",
-      "AmplifyAppId": "d1ebybcqf7mf8o"
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-jbee-dev-115401-authRole",
+            "UnauthRoleArn": "arn:aws:iam::211937696358:role/amplify-jbee-dev-115401-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::211937696358:role/amplify-jbee-dev-115401-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-jbee-dev-115401-deployment",
+            "UnauthRoleName": "amplify-jbee-dev-115401-unauthRole",
+            "StackName": "amplify-jbee-dev-115401",
+            "StackId": "arn:aws:cloudformation:us-east-1:211937696358:stack/amplify-jbee-dev-115401/26973440-3588-11eb-a569-0e2e9aec3a21",
+            "AmplifyAppId": "d1ebybcqf7mf8o"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d1ebybcqf7mf8o",
+                    "type": "manual"
+                }
+            }
+        }
     }
-  }
 }
