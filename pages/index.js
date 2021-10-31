@@ -1,7 +1,13 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Link from 'next/link';
+import styles from '../styles/Home.module.css';
+
+import { useAuth } from '../hooks/useAuth';
 
 export default function Home() {
+
+  const { user } = useAuth();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -10,6 +16,12 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <nav style={{ display: 'flex'}}>
+          <Link href="/">Home</Link>
+          <Link href="/profile">Profile</Link>
+          <Link href="/protected">Protected</Link>
+        </nav>
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -47,6 +59,13 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+        </div>
+
+        <div>
+          {user ? 
+            JSON.stringify(user) : 
+            'Not logged in'
+          }
         </div>
       </main>
 
